@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        function validateForm(){
+        var x = document.forms["myForm"]["fname"].value
+        if (x == "")  {
+        alert("Name must be filled out");
+        return false
+        }
+        else document.write("Your Form Submited, Thank You.");
+        }
+        function validateForm(){
+        var x = document.forms["myForm"]["fage"].value
+        if (x == "")  {
+        alert("Age must be filled out");
+        return false
+        }
+        else document.write("Your Form Submited, Thank You.");
+        }  
+        </script>
+    </head>
+    <body>
+    
+        <div>
+        <form name="myForm" onsubmit="validateForm()">
+            Name: <input type="text" name="fname">
+             <br>
+            <br>
+           <!-- <input type="date"> -->
+            Age:<input type="number" name="fage">
+            <br> 
+            <br>
+            Male<input type="radio"style="cursor: pointer;" >
+            Female<input type="radio"style="cursor: pointer;">
+            <br>
+            <br>
+            <button style="background-color: rgb(0, 140, 255); border-radius: 15px; cursor: pointer;">Submit</button>
+
+            <p id="message"></p> 
+            <p id="alert"></p>   
+        </form>
+    </div>
+    </body>
+</html>
